@@ -21,27 +21,30 @@ const style = {
 class App extends Component {
   render() {
     return (
-      <Card className='card' style={style.card}>
-        <CardActionArea>
-          <CardMedia style={style.media}>
-            <img src={this.props.image} alt={this.props.title} />
-          </CardMedia>
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='h2'>
-              {this.props.title}
-            </Typography>
-            <Typography component='p'>{this.props.content}</Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size='small' color='primary'>
-            Share
-          </Button>
-          <Button size='small' color='primary' onClick={this.props.onClickLearn}>
-            Learn More
-          </Button>
-        </CardActions>
-      </Card>
+      <div className='background'>
+        <h1 className='title'>Best Heroes of the International 2021</h1>
+        <Card className='card' style={style.card}>
+          <CardActionArea>
+            <CardMedia style={style.media}>
+              <img src={this.props.image} alt={this.props.title} />
+            </CardMedia>
+            <CardContent>
+              <Typography gutterBottom variant='h5' component='h2'>
+                {this.props.title}
+              </Typography>
+              <Typography component='p'>{this.props.content}</Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size='small' color='primary'>
+              Share
+            </Button>
+            <Button size='small' color='primary' onClick={this.props.onClickLearn}>
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
     );
   }
 }

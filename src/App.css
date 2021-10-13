@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -26,7 +31,19 @@
 
 .card {
   margin: 0 auto !important;
-  margin-top: 40px !important;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.background {
+  height: 100vh;
+  background: url('../src/img/dota2.jpeg') no-repeat center;
 }
 
 .App-link {
